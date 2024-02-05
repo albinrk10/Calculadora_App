@@ -10,7 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: AppTheme(selectedColor: 2).theme(),
+      //dart
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.black,
+        scaffoldBackgroundColor: Colors.black,
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       routerConfig: appRouter,
